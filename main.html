@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.open("test.html", "_blank");
+        document.getElementById("random-secret").textContent = Math.random();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Randomly Generated Secret</h1>
+    <div id="random-secret"></div>
+  </body>
+</html>
