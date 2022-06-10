@@ -7,11 +7,15 @@
       document.addEventListener("DOMContentLoaded", () => {
         window.open("test.html", "_blank");
         document.getElementById("random-secret").textContent = Math.random();
+        document.jsOnlySecret = Math.random();
+        document.getElementById("js-random-secret").textContent =
+          document.jsOnlySecret;
       });
     </script>
   </head>
   <body>
-    <h1>Randomly Generated Secret</h1>
+    <h2>Randomly Generated Secrets</h2>
     <div id="random-secret"></div>
+    <div id="js-random-secret"></div>
   </body>
 </html>

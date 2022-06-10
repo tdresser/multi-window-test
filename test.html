@@ -8,11 +8,15 @@
         const secret =
           window.opener.document.getElementById("random-secret").textContent;
         document.getElementById("stolen-secret").textContent = secret;
+        document.getElementById("js-stolen-secret").textContent =
+          window.opener.document.jsOnlySecret;
       });
     </script>
   </head>
   <body>
-    <h2>Stolen Secret</h2>
+    <h2>Secret Stolen via DOM</h2>
     <div id="stolen-secret"></div>
+    <h2>Secret Stolen via JS</h2>
+    <div id="js-stolen-secret"></div>
   </body>
 </html>
